@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#eee;
+}
+
+/* MAIN GRID */
+.container{
+  width:350px;
+  height:600px;
+  display:grid;
+  border:3px solid #333;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+/* Common styling */
+.container div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+}
+
+/* Colors */
+.header{ background:#9ec3e6; grid-area:header; }
+.content{ background:#f2f2f2; grid-area:content; }
+.signup{ background:#cfe2f3; grid-area:signup; }
+.feature1{ background:#f6d28f; grid-area:f1; }
+.feature2{ background:#e79a9a; grid-area:f2; }
+.feature3{ background:#b8b6e3; grid-area:f3; }
+
+
+
+@media (min-width:768px){
+
+.container{
+  width:500px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 1fr 80px 80px;
+
+  grid-template-areas:
+    "header header"
+    "content content"
+    "signup f1"
+    "f2 f3";
+}
+
+}
+
+@media (min-width:1024px){
+
+.container{
+  width:700px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 150px 80px 1fr;
+
+  grid-template-areas:
+    "header header header"
+    "f1 f2 f3"
+    "signup signup signup"
+    "content content content";
+}
+
+}

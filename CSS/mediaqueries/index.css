@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  gap: 10px;
+}
+
+/* Portrait */
+@media (orientation: portrait) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Landscape */
+@media (orientation: landscape) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

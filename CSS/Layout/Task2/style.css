@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fcfbfb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.layout {
+  background: #ddd;
+  padding: 10px;
+}
+
+.logo, .nav, .header, .intro, .footer,
+.sidebar, .body, .boxes div, .grid div {
+  background: rgb(204, 201, 201);
+  padding: 15px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* layout common */
+.main {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.body {
+  flex: 1;
+}
+
+/* top row */
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* right section layout 3 */
+.right {
+  flex: 1;
+}
+
+/* boxes */
+.boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.boxes div {
+  flex: 1;
+}
+
+/* grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid div {
+  height: 50px;
+}

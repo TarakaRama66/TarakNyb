@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flex Layouts</title>
+
+<style>
+
+/* Global Styling */
+body{
+  font-family: Arial;
+  background:#f3f3f3;
+}
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.layout{
+  width:48%;
+  background:white;
+  padding:10px;
+  border:2px solid #ddd;
+}
+
+/* Common Box Style */
+.box{
+  background:#bbb;
+  padding:15px;
+  text-align:center;
+  margin:5px;
+}
+
+.row{
+  display:flex;
+}
+
+.column{
+  display:flex;
+  flex-direction:column;
+}
+
+.flex1{ flex:1; }
+.flex2{ flex:2; }
+.flex3{ flex:3; }
+
+.footer{
+  margin-top:10px;
+}
+
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.grid .box{
+  width:22%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!--  Layout 1 -->
+<div class="layout">
+
+<div class="box">Logo</div>
+<div class="box">Navigation</div>
+<div class="box">Header / Banner</div>
+
+<div class="row">
+  <div class="box flex1">Side Bar</div>
+  <div class="box flex2">Body Area</div>
+</div>
+
+<div class="box footer">Footer</div>
+
+</div>
+
+<!-- Layout 2 -->
+<div class="layout">
+
+<div class="row">
+  <div class="box flex1">Logo</div>
+  <div class="box flex2">Navigation</div>
+</div>
+
+<div class="box">Header / Banner</div>
+<div class="box">Intro Text Area</div>
+
+<div class="row">
+  <div class="box flex1">Box 1</div>
+  <div class="box flex1">Box 2</div>
+  <div class="box flex1">Box 3</div>
+</div>
+
+<div class="box footer">Footer</div>
+
+</div>
+
+<!-- Layout 3 -->
+<div class="layout">
+
+<div class="box">Logo</div>
+
+<div class="row">
+  <div class="box flex1">Side Navigation</div>
+
+  <div class="column flex3">
+    <div class="box">Header / Banner</div>
+    <div class="box">Body Area</div>
+  </div>
+</div>
+
+<div class="box footer">Footer</div>
+
+</div>
+
+<!-- Layout 4 -->
+<div class="layout">
+
+<div class="row">
+  <div class="box flex1">Logo</div>
+  <div class="box flex2">Navigation</div>
+</div>
+
+<div class="grid">
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+  <div class="box">Item</div>
+</div>
+
+<div class="row">
+  <div class="box flex1">Box 1</div>
+  <div class="box flex1">Box 2</div>
+  <div class="box flex1">Box 3</div>
+</div>
+
+<div class="box footer">Footer</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

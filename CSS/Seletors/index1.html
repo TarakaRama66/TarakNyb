@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Example</title>
+<style>
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: Arial; background: #f4f4f4;
+}
+header {
+  background: #333; color: white; padding: 20px; text-align: center;
+}
+nav {
+  background: #555; padding: 15px;
+}
+nav a {
+  color: white; margin-right: 20px; text-decoration: none; display: inline-block;
+}
+.container {
+  width: 80%; margin: 30px auto;
+}
+.card {
+  background: white; padding: 20px; margin-bottom: 20px; border: 2px solid #ddd;
+}
+
+.box {
+  width: 200px; padding: 20px; border: 5px solid black; margin: 20px 0; background: lightblue;
+}
+button {
+  padding: 10px 20px; border: none; background: green; color: white; margin-top: 10px; display: inline-block;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>My Website</h1>
+  <p>CSS Box Model Demo</p>
+</header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>Content Section</h2>
+    <p>This card shows padding, margin, and border usage.</p>
+    <div class="box">
+      This is a box model example.
+    </div>
+    <button>Click Me</button>
+  </div>
+</div>
+</body>
+</html>

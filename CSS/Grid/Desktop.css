@@ -1,0 +1,46 @@
+.container{
+  width:900px;
+  display:grid;
+
+  /* 3 columns */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* rows */
+  grid-template-rows: 120px 200px 80px 250px;
+
+  gap:10px;
+}
+
+/* Header full width */
+.header{
+  grid-column:1 / 4;
+  background:rgb(230, 210, 173);
+}
+
+/* 3 features auto place in 3 columns */
+.feature{
+  background:rgb(221, 184, 116);
+}
+.feature{
+    background:rgb(238, 175, 238);
+}
+
+/* Sign up full width */
+.signup{
+  grid-column:1 / 4;
+  background:maroon;
+}
+
+/* Content full width */
+.content{
+  grid-column:1 / 4;
+  background:lightgray;
+}
+
+/* styling */
+.container div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid black;
+}

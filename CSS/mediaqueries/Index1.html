@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Grid</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+/* mobile default */
+.container{
+  display:grid;
+  grid-template-columns: 1fr;  
+  gap:10px;
+  padding:20px;
+}
+
+.box{
+  background: teal;
+  color:white;
+  padding:40px;
+  text-align:center;
+  font-size:20px;
+}
+
+/* Tablet */
+@media (min-width: 768px){
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px){
+  .container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
+  <div class="box">8</div>
+</div>
+
+</body>
+</html>

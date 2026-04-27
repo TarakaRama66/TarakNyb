@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        button:hover{
+            color: brown;
+        }
+        button{
+            color: white;
+            background: black;
+        }
+        button::first-letter{
+            color: green;
+        }
+        .next{
+            color: black;
+            background-color: white;
+        }
+        .pre{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: brown; background-color: rgb(214, 214, 40); font-size: medium;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga delectus facere, cumque reiciendis dolore magnam sed reprehenderit temporibus quisquam dicta maxime, impedit eaque alias totam laboriosam quos, a quibusdam possimus!</h1>
+    <p style="font-size: larger;font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt doloribus, incidunt at possimus deserunt id velit eos tenetur officiis ipsam alias laudantium cupiditate? Odio esse nostrum minus quod consequatur.</p>
+    <p style="font-size: medium;text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt doloribus, incidunt at possimus deserunt id velit eos tenetur officiis ipsam alias laudantium cupiditate? Odio esse nostrum minus quod consequatur.</p>
+    <p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid facere ea similique, fugit reiciendis ut dignissimos fuga harum id illum enim, quos ab molestias soluta laboriosam commodi corrupti aut!</p>
+    <p style="background-color: aqua; width: 50%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quia id quae in adipisci enim autem officia! Provident, quasi! Quibusdam quas, dolorum adipisci eius quasi dolor aperiam veritatis? Veritatis, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, minima error, accusantium eius rem voluptatem nihil atque fugit veritatis, ea eos distinctio. Est voluptas cumque expedita animi laborum. Placeat, adipisci!</p>
+    <div>
+        <button>Next</button>
+    </div>
+    <div>
+        <button>Previous</button>
+    </div>
+    <div>
+        <button class="next" style="border: 20px;">Next</button>
+    </div>
+    <div>
+        <button class="pre">Previous</button>
+    </div>
+    <div>
+        <button class="next">Next</button>
+
+    </div>
+    <div>
+        <button class="pre">Previous</button>
+    </div>
+</body>
+</html>
